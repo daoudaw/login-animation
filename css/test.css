@@ -30,6 +30,7 @@ body
 
 .p-connect {
     width: 15rem;
+    position: absolute;
   }
 
 .send {
@@ -38,9 +39,9 @@ body
     border-radius: 3px;
     font-weight: bold;
     pointer-events: auto;
-    position: absolute;
+    position: relative;
     }
-
+ 
 .no {
     color: gray;
     background-color: rgba(255, 0, 0, 0.46);

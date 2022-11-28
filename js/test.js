@@ -5,19 +5,31 @@ const pConnect = document.querySelector('.p-connect');
 
 
 
+
 send.addEventListener("mousemove", (e)=> {
-    let x = e.clientX;
-    
-    // if (x >= 300 && x <= 500) {
-    //     send.classList.add('no');
-    //     send.classList.remove('yes');
-    //     send.style.right = `${x}px`;
-    //  }
+   // let x = e.clientX;
+   let randomPosition = Math.floor(Math.random()* -109) + 1;
  
     if ( (login.value !== "test") || (pass.value !== "test") ) {
         send.classList.add('no');
         send.classList.remove('yes');
-        send.style.right = `${x}px`;
+        //send.style.right = `${x}px`;
+        send.style.right = `${randomPosition}px`;
+    }
+    else {
+         send.classList.remove('no');
+         send.classList.add('yes'); 
+     }
+});
+
+send.addEventListener('click', (e)=> {
+   // let x = e.clientX;
+
+    if ( (login.value !== "test") || (pass.value !== "test") ) {
+        send.classList.add('no');
+        send.classList.remove('yes'); 
+        send.style.right = `${randomPosition}px`;
+       
     }
     else {
          send.classList.remove('no');
