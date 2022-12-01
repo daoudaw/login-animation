@@ -22,17 +22,4 @@ send.addEventListener("mousemove", (e)=> {
      }
 });
 
-send.addEventListener('click', (e)=> {
-   // let x = e.clientX;
 
-    if ( (login.value !== "test") || (pass.value !== "test") ) {
-        send.classList.add('no');
-        send.classList.remove('yes'); 
-        send.style.right = `${randomPosition}px`;
-       
-    }
-    else {
-         send.classList.remove('no');
-         send.classList.add('yes'); 
-     }
-});
