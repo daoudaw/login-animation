@@ -1,4 +1,4 @@
- const login = document.querySelector('.login');
+const login = document.querySelector('.login');
 const pass = document.querySelector('.pass');
 const send = document.querySelector('.send');
 const pConnect = document.querySelector('.p-connect');
