@@ -22,4 +22,20 @@ send.addEventListener("mousemove", (e)=> {
      }
 });
 
+send.addEventListener("click", (e)=> {
+    // let x = e.clientX;
+    let randomPosition = Math.floor(Math.random()* -109) + 1;
+  
+     if ( (login.value !== "test") || (pass.value !== "test") ) {
+         send.classList.add('no');
+         send.classList.remove('yes');
+         //send.style.right = `${x}px`;
+         send.style.right = `${randomPosition}px`;
+     }
+     else {
+          send.classList.remove('no');
+          send.classList.add('yes'); 
+      }
+ });
+
 
